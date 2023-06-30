@@ -141,6 +141,87 @@ header a:hover {
   background-color: rgb(245,245,245);
 }
 
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: lightblue;
+  margin: 50px 300px;
+}
+
+.form {
+  min-width: 400px;
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+  order: 10;
+}
+
+.form__input {
+  width: 100%;
+  padding: 6px;
+  margin: 6px 0;
+  border: none;
+  border-bottom: 3px solid #1c7;
+  background: transparent;
+  color: #fff;
+}
+
+.form__input:focus {
+  background: linear-gradient(to bottom, transparent, #333);
+  outline: none; /*quita el borde de los inputs*/
+  border-bottom: 3px solid #333/*#186A3B*/; /*cambia el color del borde del input cuando le da click*/
+}
+
+.form textarea {
+  min-height: 140px;
+}
+
+.form-img {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  min-width: 300px;
+  max-width: 400px;
+  order: 2;
+}
+
+.form-img div {
+  padding: 10px;
+  display: flex;
+}
+
+.img-container {
+  margin: auto;
+  
+}
+
+
+
+.form-img img {
+  width: 100%;
+  margin: auto;
+  border-radius: 10%;
+
+}
+
+.form input[type="submit"] {
+  background: linear-gradient(to bottom, lightblue, gray);
+  border-bottom: none;
+}
+
+.form input[type="submit"]:hover {
+  background: #1c7;
+}
+
+.form input[type="submit"]:focus {  /*focus es cuando le doy clic al boton cambia las propiadades al cliquear*/
+  background: #094;
+}
+.form input[type="submit"]:active {
+  background: #17252A;
+}
+
 footer {
   background-color: rgb(200,200,200);
 }
